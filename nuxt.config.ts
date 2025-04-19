@@ -4,9 +4,9 @@ export default defineNuxtConfig({
 	nitro: {
 		preset: 'static'
 	},
-	// app: {
-	// 	baseURL: '/имя-репозитория/', // только если проект лежит не в корне
-	// },
+	app: {
+		baseURL: '/ira-diplom/', // только если проект лежит не в корне
+	},
 	devtools: {enabled: true},
 	modules: ['@nuxt/eslint', '@nuxt/scripts']
 })
