@@ -6,6 +6,7 @@ export default defineNuxtConfig({
 	},
 	app: {
 		baseURL: '/ira-diplom/', // только если проект лежит не в корне
+		buildAssetsDir: 'assets',
 	},
 	devtools: {enabled: true},
 	modules: ['@nuxt/eslint', '@nuxt/scripts']
