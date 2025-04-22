@@ -12,10 +12,6 @@ export default defineNuxtConfig({
 	nitro: {
 		preset: 'static'
 	},
-	app: {
-		baseURL: isDev ? '/' : '/ira-diplom/', // только если проект лежит не в корне
-		// buildAssetsDir: 'assets',
-	},
 	devtools: {enabled: false},
 	modules: ['@pinia/nuxt', '@nuxt/eslint', '@nuxt/scripts'],
 	components: [
@@ -53,9 +49,9 @@ export default defineNuxtConfig({
 		'assets/styles/common.scss',
 	],
 	app: {
-		// baseURL: BASE_URL,
+		baseURL: isDev ? '/' : '/ira-diplom/', // только если проект лежит не в корне
 		head: {
-			title: 'Gamehub.zone Admin',
+			title: 'Diplom',
 			meta: [
 				{ charset: 'utf-8' },
 				{
@@ -63,7 +59,6 @@ export default defineNuxtConfig({
 					content: 'width=device-width, initial-scale=1',
 				},
 				{
-					hid: 'description',
 					name: 'description',
 					content: '',
 				},
