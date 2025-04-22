@@ -12,6 +12,7 @@ export default defineNuxtConfig({
 	nitro: {
 		preset: 'static'
 	},
+	ssr: true,
 	devtools: {enabled: false},
 	modules: ['@pinia/nuxt', '@nuxt/eslint', '@nuxt/scripts'],
 	components: [
@@ -20,16 +21,29 @@ export default defineNuxtConfig({
 			pathPrefix: false,
 		},
 	],
+	// vite: {
+	// 	define: {
+	// 		'process.env.DEBUG': false,
+	// 	},
+	// 	css: {
+	// 		preprocessorOptions: {
+	// 			scss: {
+	// 				additionalData: '@use "@/assets/styles/index.scss" as *;',
+	// 			},
+	// 		},
+	// 	},
+	// },
 	vite: {
-		define: {
-			'process.env.DEBUG': false,
-		},
 		css: {
 			preprocessorOptions: {
 				scss: {
-					additionalData: '@use "@/assets/styles/index.scss" as *;',
+					additionalData: '@use "@/assets/styles/basic/_variables.scss" as *;',
+					silenceDeprecations: ['legacy-js-api'],
 				},
 			},
+		},
+		build: {
+			cssCodeSplit: false,
 		},
 	},
 	css: [
