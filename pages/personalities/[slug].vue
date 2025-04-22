@@ -21,15 +21,15 @@ export default defineNuxtComponent({
 		const store = useStore();
 		let movements = [];
 
-		try {
-			const response = await $fetch('/data/art-movements.json');
-
-			if (response) {
-                movements = response;
-			}
-		} catch (e) {
-            console.log(e)
-		}
+		// try {
+		// 	const response = await $fetch('/data/art-movements.json');
+        //
+		// 	if (response) {
+        //         movements = response;
+		// 	}
+		// } catch (e) {
+        //     console.log(e)
+		// }
 
 		// useSeoMeta({
 		// 	title: t('pages.games.title'),
