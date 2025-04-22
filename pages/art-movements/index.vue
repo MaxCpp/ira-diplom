@@ -24,18 +24,18 @@ export default defineNuxtComponent({
 		try {
             let response
 
-            if (process.server) {
-                response = await useFetch('/api/art-movements')
-            } else {
-                response = await $fetch('/api/art-movements');
-            }
-            
-			// const response = await $fetch('/api/art-movements');
-            console.log('response', response)
-
-			if (response) {
-                movements = response;
-			}
+            // if (process.server) {
+            //     response = await useFetch('/api/art-movements')
+            // } else {
+            //     response = await $fetch('/api/art-movements');
+            // }
+            //
+			// // const response = await $fetch('/api/art-movements');
+            // console.log('response', response)
+            //
+			// if (response) {
+            //     movements = response;
+			// }
 		} catch (e) {
             console.log(e)
 		}

@@ -42,15 +42,15 @@ export default defineNuxtComponent({
 		try {
             let response
 
-            if (process.server) {
-                response = await useFetch('/api/persons')
-            } else {
-                response = await $fetch('/api/persons');
-            }
-
-			if (response) {
-                persons = response;
-			}
+            // if (process.server) {
+            //     response = await useFetch('/api/persons')
+            // } else {
+            //     response = await $fetch('/api/persons');
+            // }
+            //
+			// if (response) {
+            //     persons = response;
+			// }
 		} catch (e) {
             console.log(e)
 		}
