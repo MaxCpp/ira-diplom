@@ -67,6 +67,7 @@ export default defineNuxtComponent({
 </script>
 
 <style scoped lang="scss">
+@use "@/assets/styles/basic/_variables.scss" as *;
 .list-persons {
     display: flex;
     flex-direction: column;
