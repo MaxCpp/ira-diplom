@@ -138,7 +138,8 @@ export default {
 		};
 	},
 	setup() {
-		const store = useStore();
+        const store = process.client ? useStore() : null;
+        // const store = useStore();
 
 		return {store}
 	},
