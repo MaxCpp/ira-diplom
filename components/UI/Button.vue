@@ -98,6 +98,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@use "@/assets/styles/basic/_variables.scss" as *;
 .button {
     position: relative;
     display: inline-flex;

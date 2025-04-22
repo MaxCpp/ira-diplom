@@ -114,6 +114,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use "@/assets/styles/basic/_variables.scss" as *;
 .error {
 	margin-top: 250px;
 	text-align: center;
