@@ -38,28 +38,19 @@ export default defineNuxtConfig({
 			preprocessorOptions: {
 				scss: {
 					additionalData: '@use "@/assets/styles/basic/_variables.scss" as *;',
-					silenceDeprecations: ['legacy-js-api'],
+					// silenceDeprecations: ['legacy-js-api'],
 				},
 			},
 		},
-		build: {
-			cssCodeSplit: false,
-		},
+		// build: {
+		// 	cssCodeSplit: false,
+		// },
 	},
 	css: [
 		'assets/styles/basic/_reset.scss',
 		'assets/styles/basic/_grid.scss',
 		'assets/styles/basic/_typography.scss',
 		'assets/styles/basic/_mixins.scss',
-		// 'assets/styles/components/_buttom.scss',
-		// 'assets/styles/components/_breadcrumbs.scss',
-		// 'assets/styles/components/_card.scss',
-		// 'assets/styles/components/_forms.scss',
-		// 'assets/styles/components/_table.scss',
-		// 'assets/styles/components/_content-container.scss',
-		// 'assets/styles/components/_game-details.scss',
-		// 'assets/styles/components/_features.scss',
-		// 'assets/styles/components/_news.scss',
 		'assets/styles/common.scss',
 	],
 	app: {
