@@ -1,9 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { fileURLToPath } from 'url'
-import { dirname, resolve } from 'path'
-
-const __dirname = dirname(fileURLToPath(import.meta.url))
-
 const isDev = process.env.APP_ENV === 'development';
 const isStaging = process.env.APP_ENV === 'staging';
 const isProd = process.env.APP_ENV === 'production';
@@ -32,7 +27,7 @@ export default defineNuxtConfig({
 		css: {
 			preprocessorOptions: {
 				scss: {
-					additionalData: `@use "${resolve(__dirname, 'src/assets/styles/basic/variables.scss')}" as *;`,
+					additionalData: '@use "@/assets/styles/index.scss" as *;',
 				},
 			},
 		},
