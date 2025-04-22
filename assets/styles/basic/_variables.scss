@@ -1,0 +1,72 @@
+//color
+$white: #FFFFFF;
+$black: #313131;
+
+$gray: rgba(49, 49, 49, .7);
+
+
+// From other project
+$primary1: #DCA351;
+$primary2: #A97B38;
+
+$neutrals1: #f7f7f7;
+$neutrals2: #f2f2f2;
+$neutrals3: #ededed;
+$neutrals4: #818181;
+$neutrals5: rgba(49, 49, 49, .7);
+
+
+//fonts
+$primary-text: Inter, sans-serif;
+
+$thin: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black-w: 900;
+
+
+// MEDIA
+$mobileS: 320px;
+$mobileM: 375px;
+$mobileL: 425px;
+$tabletS: 480px;
+$tabletM: 640px;
+$tabletL: 768px;
+$laptopS: 992px;
+$laptopM: 1024px;
+$laptopL: 1200px;
+$laptopXL: 1440px;
+$fullHD: 1920px;
+
+
+//Colors
+$BackgroundBase: #FFFFFF;
+$Background: #FBF9F4;
+$Surface: #FAF5E9;
+$OnSurface: #FAFAFA;
+$SecondarySurface: #EBEBEB;
+$SecondaryOnSurface: #F4F4F4;
+$White: #FFFFFF;
+$White90: #FFFFFFe6;
+$White80: #FFFFFFcc;
+$Black80: #292E31cc;
+$Additional: #FCF3D9;
+$AdditionalSurface: #FAEABD;
+$AdditionalOrange: #F0D5C1;
+
+$BorderEggplant: #E2C2D5;
+$BorderGray: #DFDFDF;
+
+
+$gradient-bg-1: linear-gradient(180deg, #CD89B1, #EDB3A1);
+$gradient-bg-2: linear-gradient(90deg, #A32464, #E06A49);
+$gradient-bg-3: linear-gradient(180deg, #F3369D, #F2CD40);
+$gradient-card-1: linear-gradient(90deg, #E7B661, #FA858B);
+$gradient-card-2: linear-gradient(135deg, #EC7DBE, #F5C67D);
+$gradient-card-3: linear-gradient(90deg, #D26DA4, #FAE491);
+$gradient-card-4: linear-gradient(90deg, #FA858B, #E7B661);
+$gradient-card-5: linear-gradient(90deg, #D19251, #FFAFDB);

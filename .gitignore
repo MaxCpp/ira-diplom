@@ -5,6 +5,7 @@
 .nitro
 .cache
 dist
+other
 
 # Node dependencies
 node_modules
@@ -22,3 +23,9 @@ logs
 .env
 .env.*
 !.env.example
+
+#pm2 ecosystem file
+ecosystem.config.cjs
+
+#pipeline artifacts
+artifacts
