@@ -32,11 +32,13 @@
 </template>
 
 <script>
+import {useStore} from "~/stores/store.js";
+
 export default defineNuxtComponent({
 	name: 'PageArtMovements',
 	async setup() {
-		const {$config} = useNuxtApp();
-		const store = useStore();
+        const store = process.client ? useStore() : null;
+		// const store = useStore();
 		let persons = [];
 
 		try {

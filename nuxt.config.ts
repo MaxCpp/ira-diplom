@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 	// },
 	// ssr: true,
 	devtools: {enabled: false},
-	modules: ['@pinia/nuxt', '@nuxt/eslint', '@nuxt/scripts'],
+	modules: ['@nuxt/eslint', '@nuxt/scripts', '@pinia/nuxt'],
 	components: [
 		{
 			path: '~/components', // will get any games nested in let's say /games/nested
