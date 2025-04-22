@@ -9,10 +9,10 @@ console.log('HOST_FRONTEND:', HOST_FRONTEND);
 
 export default defineNuxtConfig({
 	compatibilityDate: '2024-11-01',
-	nitro: {
-		preset: 'static'
-	},
-	ssr: true,
+	// nitro: {
+	// 	preset: 'static'
+	// },
+	// ssr: true,
 	devtools: {enabled: false},
 	modules: ['@pinia/nuxt', '@nuxt/eslint', '@nuxt/scripts'],
 	components: [

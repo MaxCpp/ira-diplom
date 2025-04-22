@@ -12,18 +12,7 @@ export default defineNuxtComponent({
 	async setup() {
 		const {$config} = useNuxtApp();
 		const store = useStore();
-		let games = [];
 
-		// try {
-		// 	const response = await api.games.fetchGames();
-        //
-		// 	if (response) {
-		// 		games = response.data;
-		// 	}
-		// } catch (e) {
-        //
-		// }
-        //
 		// useSeoMeta({
 		// 	title: t('pages.games.title'),
 		// 	ogTitle: t('pages.games.title'),
@@ -35,7 +24,6 @@ export default defineNuxtComponent({
 
 		return {
 			store,
-			games
 		}
 	},
 })

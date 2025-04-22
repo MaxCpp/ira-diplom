@@ -8,9 +8,8 @@
 import {useStore} from "~/stores/store.js";
 
 export default defineNuxtComponent({
-	name: 'PageHome',
+	name: 'PageLearning',
 	async setup() {
-		const {$config} = useNuxtApp();
 		const store = useStore();
 		let games = [];
 
