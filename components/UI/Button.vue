@@ -85,8 +85,6 @@ export default {
                 ['button_size_' + this.size]: true,
                 ['button_color_' + this.color]: true,
                 button_outlined: this.outlined,
-                button_ellipse: this.ellipse,
-                button_orbit: this.orbit,
                 button_icon: this.icon,
                 button_text: this.text,
                 button_loading: this.loading,

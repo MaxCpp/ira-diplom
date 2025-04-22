@@ -16,7 +16,7 @@
     flex-direction: column;
     height: 215px;
     padding: 15px 10px;
-    margin-top: 100px;
+    margin-top: auto;
     background-color: $neutrals2;
     background-image: url('/images/brash@2x.jpg');
     background-position: 100% 22px;
