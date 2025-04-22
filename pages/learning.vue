@@ -10,7 +10,8 @@ import {useStore} from "~/stores/store.js";
 export default defineNuxtComponent({
 	name: 'PageLearning',
 	async setup() {
-		const store = useStore();
+        const store = process.client ? useStore() : null;
+        // const store = useStore();
 		let games = [];
 
 		// try {
