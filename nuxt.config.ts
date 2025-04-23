@@ -9,9 +9,13 @@ console.log('HOST_FRONTEND:', HOST_FRONTEND);
 try {
 export default defineNuxtConfig({
 	compatibilityDate: '2024-11-01',
-	// nitro: {
-	// 	preset: 'static'
-	// },
+	nitro: {
+		prerender: {
+			routes: ['/'],       // явно
+			crawlLinks: false,   // отключаем автоматический обход
+		},
+		// preset: 'static'
+	},
 	// ssr: true,
 	devtools: {enabled: false},
 	// modules: ['@nuxt/eslint', '@nuxt/scripts', '@pinia/nuxt'],
