@@ -39,11 +39,11 @@ export default defineNuxtConfig({
 		// },
 	},
 	css: [
-		'@/assets/styles/basic/_reset.scss',
-		'@/assets/styles/basic/_grid.scss',
-		'@/assets/styles/basic/_typography.scss',
-		'@/assets/styles/basic/_mixins.scss',
-		'@/assets/styles/common.scss',
+		'~/assets/styles/basic/_reset.scss',
+		'~/assets/styles/basic/_grid.scss',
+		'~/assets/styles/basic/_typography.scss',
+		'~/assets/styles/basic/_mixins.scss',
+		'~/assets/styles/common.scss',
 	],
 	app: {
 		// baseURL: isDev ? '/' : '/ira-diplom/', // только если проект лежит не в корне
