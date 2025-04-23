@@ -10,11 +10,11 @@ try {
 export default defineNuxtConfig({
 	compatibilityDate: '2024-11-01',
 	nitro: {
-		prerender: {
-			routes: ['/'],       // явно
-			crawlLinks: false,   // отключаем автоматический обход
-		},
-		// preset: 'static'
+		// prerender: {
+		// 	routes: ['/'],       // явно
+		// 	crawlLinks: false,   // отключаем автоматический обход
+		// },
+		preset: 'static'
 	},
 	// ssr: true,
 	devtools: {enabled: false},
@@ -25,18 +25,6 @@ export default defineNuxtConfig({
 			pathPrefix: false,
 		},
 	],
-	// vite: {
-	// 	define: {
-	// 		'process.env.DEBUG': false,
-	// 	},
-	// 	css: {
-	// 		preprocessorOptions: {
-	// 			scss: {
-	// 				additionalData: '@use "@/assets/styles/index.scss" as *;',
-	// 			},
-	// 		},
-	// 	},
-	// },
 	vite: {
 		css: {
 			preprocessorOptions: {
@@ -51,11 +39,11 @@ export default defineNuxtConfig({
 		// },
 	},
 	css: [
-		'assets/styles/basic/_reset.scss',
-		'assets/styles/basic/_grid.scss',
-		'assets/styles/basic/_typography.scss',
-		'assets/styles/basic/_mixins.scss',
-		'assets/styles/common.scss',
+		'@/assets/styles/basic/_reset.scss',
+		'@/assets/styles/basic/_grid.scss',
+		'@/assets/styles/basic/_typography.scss',
+		'@/assets/styles/basic/_mixins.scss',
+		'@/assets/styles/common.scss',
 	],
 	app: {
 		baseURL: isDev ? '/' : '/ira-diplom/', // только если проект лежит не в корне
