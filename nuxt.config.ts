@@ -46,7 +46,7 @@ export default defineNuxtConfig({
 		'@/assets/styles/common.scss',
 	],
 	app: {
-		baseURL: isDev ? '/' : '/ira-diplom/', // только если проект лежит не в корне
+		// baseURL: isDev ? '/' : '/ira-diplom/', // только если проект лежит не в корне
 		head: {
 			title: 'Diplom',
 			meta: [
