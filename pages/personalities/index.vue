@@ -42,13 +42,7 @@ export default defineNuxtComponent({
 		let persons = [];
 
 		try {
-            let response
-
-            if (process.server) {
-                response = await useFetch('/api/persons')
-            } else {
-                response = await $fetch('/api/persons');
-            }
+            const response = await $fetch('/data/persons.json');
 
 			if (response) {
                 persons = response;
