@@ -6,7 +6,7 @@ const HOST_FRONTEND = isStaging ? 'https://staging.18peaches.com' : (isProd ? 'h
 
 console.log('APP_ENV:', process.env.APP_ENV);
 console.log('HOST_FRONTEND:', HOST_FRONTEND);
-try {
+
 export default defineNuxtConfig({
 	compatibilityDate: '2024-11-01',
 	nitro: {
@@ -107,6 +107,3 @@ export default defineNuxtConfig({
 		},
 	},
 })
-} catch (e) {
-	console.error('❌ nuxt.config.ts crashed', e)
-}
