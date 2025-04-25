@@ -16,12 +16,12 @@ export default defineNuxtConfig({
 		// },
 		preset: 'static'
 	},
-	// ssr: true,
+	ssr: true,
 	devtools: {enabled: false},
 	modules: [
 		// '@nuxt/eslint',
 		// '@nuxt/scripts',
-		'@pinia/nuxt'
+		// '@pinia/nuxt'
 	],
 	components: [
 		{

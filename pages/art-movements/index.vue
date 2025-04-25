@@ -19,7 +19,7 @@ import {useStore} from "~/stores/store.js";
 export default defineNuxtComponent({
 	name: 'PageArtMovements',
 	async setup() {
-        const store = import.meta.client ? useStore() : null;
+        // const store = import.meta.client ? useStore() : null;
 		// const store = useStore();
 		let movements = [];
 
@@ -52,7 +52,7 @@ export default defineNuxtComponent({
 		// });
 
 		return {
-			store,
+			// store,
             movements
 		}
 	},
