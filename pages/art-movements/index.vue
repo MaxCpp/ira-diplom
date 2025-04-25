@@ -32,7 +32,7 @@ export default defineNuxtComponent({
             //     response = await $fetch('/api/art-movements');
             // }
 
-			response = await $fetch('/api/art-movements');
+			response = await $fetch('/data/art-movements.json');
             console.log('response', response)
 
 			if (response) {
