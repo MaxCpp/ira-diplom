@@ -33,7 +33,7 @@ export default defineNuxtConfig({
 		css: {
 			preprocessorOptions: {
 				scss: {
-					additionalData: '@use "@/assets/styles/basic/variables.scss" as *;',
+					additionalData: '@use "@/assets/styles/basic/_variables.scss" as *;',
 					// silenceDeprecations: ['legacy-js-api'],
 				},
 			},
@@ -43,10 +43,10 @@ export default defineNuxtConfig({
 		// },
 	},
 	css: [
-		'assets/styles/basic/_reset.scss',
-		'assets/styles/basic/_grid.scss',
-		'assets/styles/basic/_typography.scss',
-		'assets/styles/basic/_mixins.scss',
+		'assets/styles/basic/reset.scss',
+		'assets/styles/basic/grid.scss',
+		'assets/styles/basic/typography.scss',
+		'assets/styles/basic/mixins.scss',
 		'assets/styles/common.scss',
 	],
 	app: {
