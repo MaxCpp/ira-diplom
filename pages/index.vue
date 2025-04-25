@@ -13,7 +13,7 @@ export default defineNuxtComponent({
         try {
             console.log('✅ index.vue setup entered 1');
             // const store = useStore();
-            const store = process.client ? useStore() : null;
+            const store = import.meta.client ? useStore() : null;
             console.log('✅ index.vue setup entered 2');
             
             return {

@@ -19,7 +19,7 @@ import {useStore} from "~/stores/store.js";
 export default defineNuxtComponent({
 	name: 'PageArtMovements',
 	async setup() {
-        const store = process.client ? useStore() : null;
+        const store = import.meta.client ? useStore() : null;
 		// const store = useStore();
 		let movements = [];
 
@@ -31,13 +31,13 @@ export default defineNuxtComponent({
             // } else {
             //     response = await $fetch('/api/art-movements');
             // }
-            //
-			// // const response = await $fetch('/api/art-movements');
-            // console.log('response', response)
-            //
-			// if (response) {
-            //     movements = response;
-			// }
+
+			response = await $fetch('/api/art-movements');
+            console.log('response', response)
+
+			if (response) {
+                movements = response;
+			}
 		} catch (e) {
             console.log(e)
 		}
