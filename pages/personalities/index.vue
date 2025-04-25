@@ -3,7 +3,7 @@
         <h1 class="title_size_40 mb-15">Персоналии</h1>
         <p class="text-gray">{{persons.length}} авторов</p>
         
-        <div class="list-persons mt-40">
+        <div v-if="persons.length" class="list-persons mt-40">
             <div v-for="card in persons" class="card-person">
                 <div style="display: flex; gap:10px; align-items: center">
                     <img :src="card.avatar" class="card-person__avatar"/>

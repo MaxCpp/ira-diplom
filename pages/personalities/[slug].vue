@@ -4,22 +4,22 @@
         <p class="text-gray">Текст который я могу менять</p>
         
         <div class="list-movements">
-            <div v-for="card in movements" class="card-movements">
-                <img :src="card.img" class="card-movements__image"/>
-                <h3 class="card-movements__title">{{card.title}}</h3>
-                <p class="card-movements__description">{{card.description}}</p>
-            </div>
+<!--            <div v-for="card in movements" class="card-movements">-->
+<!--                <img :src="card.img" class="card-movements__image"/>-->
+<!--                <h3 class="card-movements__title">{{card.title}}</h3>-->
+<!--                <p class="card-movements__description">{{card.description}}</p>-->
+<!--            </div>-->
         </div>
 	</div>
 </template>
 
 <script>
-import {useStore} from "~/stores/store.js";
+// import {useStore} from "~/stores/store.js";
 
 export default defineNuxtComponent({
 	name: 'PageArtMovements',
 	async setup() {
-        const store = process.client ? useStore() : null;
+        // const store = process.client ? useStore() : null;
 		// const store = useStore();
 		let movements = [];
 
@@ -43,7 +43,7 @@ export default defineNuxtComponent({
 		// });
 
 		return {
-			store,
+			// store,
             movements
 		}
 	},
