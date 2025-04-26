@@ -50,13 +50,6 @@ export default {
 </script>
 
 <style lang="scss">
-@use '@/assets/styles/basic/_variables.scss' as *;
-@use '@/assets/styles/basic/reset.css';
-@use '@/assets/styles/basic/mixins.scss';
-@use '@/assets/styles/basic/grid.scss';
-@use '@/assets/styles/basic/typography.scss';
-@use '@/assets/styles/common.scss';
-
 .page-wrapper {
     display: flex;
 
