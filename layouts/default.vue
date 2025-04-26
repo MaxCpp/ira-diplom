@@ -17,6 +17,11 @@
 
 <script>
 import {useStore} from "~/stores/store.js";
+import '@/assets/styles/basic/reset.css';
+import '@/assets/styles/basic/mixins.scss';
+import '@/assets/styles/basic/grid.scss';
+import '@/assets/styles/basic/typography.scss';
+import '@/assets/styles/common.scss';
 
 export default {
 	name: 'default',
