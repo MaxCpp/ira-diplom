@@ -14,7 +14,11 @@ export default defineNuxtConfig({
 		// 	routes: ['/'],       // явно
 		// 	crawlLinks: false,   // отключаем автоматический обход
 		// },
-		preset: 'static'
+		// preset: 'static'
+		preset: 'github-pages',
+		routeRules: {
+			'/**': { static: true }
+		}
 	},
 	ssr: true,
 	devtools: {enabled: false},
@@ -43,8 +47,8 @@ export default defineNuxtConfig({
 	// 	},
 	},
 	css: [
-		'~/assets/styles/basic/variables.scss',
 		'~/assets/styles/basic/reset.css',
+		'~/assets/styles/basic/variables.scss',
 		'~/assets/styles/basic/grid.scss',
 		'~/assets/styles/basic/typography.scss',
 		'~/assets/styles/basic/mixins.scss',
