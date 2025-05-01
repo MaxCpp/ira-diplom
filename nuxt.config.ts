@@ -29,7 +29,11 @@ export default defineNuxtConfig({
 			pathPrefix: false,
 		},
 	],
-	// vite: {
+	vite: {
+		build: {
+			cssCodeSplit: true, // Разделение CSS на отдельные файлы
+			assetsInlineLimit: 0, // Не встраивать стили и ресурсы в HTML
+		},
 	// 	css: {
 	// 		preprocessorOptions: {
 	// 			scss: {
@@ -37,13 +41,13 @@ export default defineNuxtConfig({
 	// 			},
 	// 		},
 	// 	},
-	// },
+	},
 	css: [
-		'~/assets/styles/basic/_variables.scss',
-		'~/assets/styles/basic/_reset.css',
-		'~/assets/styles/basic/_grid.scss',
-		'~/assets/styles/basic/_typography.scss',
-		'~/assets/styles/basic/_mixins.scss',
+		'~/assets/styles/basic/variables.scss',
+		'~/assets/styles/basic/reset.css',
+		'~/assets/styles/basic/grid.scss',
+		'~/assets/styles/basic/typography.scss',
+		'~/assets/styles/basic/mixins.scss',
 		'~/assets/styles/common.scss',
 	],
 	app: {
