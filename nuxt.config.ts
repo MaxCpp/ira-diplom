@@ -48,11 +48,11 @@ export default defineNuxtConfig({
 	},
 	css: [
 		'~/assets/styles/basic/reset.css',
-		'~/assets/styles/basic/variables.scss',
-		'~/assets/styles/basic/grid.scss',
-		'~/assets/styles/basic/typography.scss',
-		'~/assets/styles/basic/mixins.scss',
-		'~/assets/styles/common.scss',
+		// '~/assets/styles/basic/variables.scss',
+		// '~/assets/styles/basic/grid.scss',
+		// '~/assets/styles/basic/typography.scss',
+		// '~/assets/styles/basic/mixins.scss',
+		// '~/assets/styles/common.scss',
 	],
 	app: {
 		buildAssetsDir: '_nuxt',
