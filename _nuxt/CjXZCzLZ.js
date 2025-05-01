@@ -1,0 +1,1 @@
+import{d as e}from"./Cieq1HBF.js";import{_ as n,c as o,o as t}from"./AfJ1Ytbq.js";const c=e({name:"PageHome",async setup(){}},"$RcJmAH4yb5");function s(a,r,p,m,d,_){return t(),o("div",null," Index ")}const u=n(c,[["render",s]]);export{u as default};
