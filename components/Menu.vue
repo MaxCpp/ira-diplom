@@ -50,7 +50,6 @@
 </template>
 
 <style scoped lang="scss">
-@use "@/assets/styles/basic/_variables.scss" as *;
 .nav {
     display: flex;
     flex-direction: column;

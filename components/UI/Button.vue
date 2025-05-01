@@ -98,7 +98,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@use "@/assets/styles/basic/_variables.scss" as *;
 .button {
     position: relative;
     display: inline-flex;
@@ -112,7 +111,7 @@ export default {
 	font-family: "Teko", sans-serif;
 	font-weight: 500;
 	font-size: 15px;
-    color: $white;
+    color: var(--white-color);
     text-decoration: none;
     cursor: pointer;
 	transition: background-color .2s linear, border-color .2s linear, color .2s linear;
@@ -147,7 +146,7 @@ export default {
         &_primary {
 			&:hover,
 			&:focus {
-				color: $white;
+				color: var(--white-color);
 				background-color: var(--black-color);
 				border-color: var(--black-color);
 			}
@@ -158,8 +157,8 @@ export default {
 
             //&:hover,
             //&:focus {
-            //    background-color: $primary2;
-            //    border-color: $primary2;
+            //    background-color: var(--primary2);
+            //    border-color: var(--primary2);
             //}
 
             //&:disabled {
@@ -189,8 +188,8 @@ export default {
         //
         //    &:hover,
         //    &:focus {
-        //        color: $white;
-		//		background: $white;
+        //        color: var(--white-color);
+		//		background: var(--white-color);
         //        //border-color: $orange-2;
         //    }
         //
@@ -228,8 +227,8 @@ export default {
         justify-content: flex-start;
 
         &.checked {
-            color: $white;
-            border-color: $primary1;
+            color: var(--white-color);
+            border-color: var(--primary1);
         }
 
         &__text {

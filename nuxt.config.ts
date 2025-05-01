@@ -71,11 +71,11 @@ export default defineNuxtConfig({
 					rel: 'stylesheet',
 					href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',
 				},
-				{
-					rel: 'stylesheet',
-					type: 'text/css',
-					href: '//assets/styles/basic/_reset.css',
-				},
+				// {
+				// 	rel: 'stylesheet',
+				// 	type: 'text/css',
+				// 	href: '//assets/styles/basic/_reset.css',
+				// },
 				// {
 				// 	rel: 'icon',
 				// 	type: 'image/x-icon',

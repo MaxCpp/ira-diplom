@@ -58,7 +58,6 @@ export default defineNuxtComponent({
 </script>
 
 <style scoped lang="scss">
-@use "@/assets/styles/basic/_variables.scss" as *;
 .list-movements {
     display: flex;
     flex-wrap: wrap;

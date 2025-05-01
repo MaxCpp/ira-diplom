@@ -114,12 +114,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "@/assets/styles/basic/_variables.scss" as *;
 .error {
 	margin-top: 250px;
 	text-align: center;
 
-	@media (max-width: $mobileL) {
+	@media (max-width: var(--mobileL)) {
 		margin-top: 150px;
 		padding-inline: 30px;
 	}
@@ -128,7 +127,7 @@ export default {
 		margin-left: 40px;
 		margin-bottom: 42px;
 
-		@media (max-width: $mobileL) {
+		@media (max-width: var(--mobileL)) {
 			margin-left: 20px;
 			margin-bottom: 0px;
 			width: 80%;
@@ -142,7 +141,7 @@ export default {
 		font-size: 36px;
 		line-height: 40px;
 
-		@media (max-width: $mobileL) {
+		@media (max-width: var(--mobileL)) {
 			font-size: 28px;
 			line-height: 32px;
 		}

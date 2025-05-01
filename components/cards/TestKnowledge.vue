@@ -11,7 +11,6 @@
 </template>
 
 <style scoped lang="scss">
-@use "@/assets/styles/basic/_variables.scss" as *;
 .test-knowledge {
     display: flex;
     flex-direction: column;
