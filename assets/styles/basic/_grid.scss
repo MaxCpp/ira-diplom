@@ -1,7 +1,7 @@
 html {
-	background-color: $BackgroundBase;
-	color: $black;
-	font-family: $primary-text;
+	background-color: var(--bg-color);
+	color: var(--black-color);
+	font-family: var(--primary-text);
 	font-size: 15px;
 	scroll-behavior: smooth;
 }
@@ -22,7 +22,7 @@ html {
 	padding-right: 130px;
 	margin-inline: auto;
 
-	@media (max-width: $laptopL) {
+	@media (max-width: var(--laptopL)) {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -53,7 +53,7 @@ html {
 .mb-40 {
 	margin-bottom: 40px;
 
-	@media (max-width: $laptopS) {
+	@media (max-width: var(--laptopS)) {
 		margin-bottom: 24px;
 	}
 }
@@ -82,7 +82,7 @@ html {
 }
 
 .header-modal-open{
-	@media (max-width: $laptopL) {
+	@media (max-width: var(--laptopL)) {
 		overflow: hidden;
 	}
 }
@@ -114,11 +114,11 @@ html {
 		}
 		li::marker {
 			font-size: 18px;
-			color: $black;
+			color: var(--black-color);
 		}
 
 		strong {
-			color: $black;
+			color: var(--black-color);
 		}
 	}
 }

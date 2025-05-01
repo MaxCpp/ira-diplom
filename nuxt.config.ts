@@ -29,16 +29,17 @@ export default defineNuxtConfig({
 			pathPrefix: false,
 		},
 	],
-	vite: {
-		css: {
-			preprocessorOptions: {
-				scss: {
-					additionalData: '@use "@/assets/styles/basic/_variables.scss" as *;',
-				},
-			},
-		},
-	},
+	// vite: {
+	// 	css: {
+	// 		preprocessorOptions: {
+	// 			scss: {
+	// 				additionalData: '@use "@/assets/styles/basic/_variables.scss" as *;',
+	// 			},
+	// 		},
+	// 	},
+	// },
 	css: [
+		'~/assets/styles/basic/_variables.scss',
 		'~/assets/styles/basic/_reset.css',
 		'~/assets/styles/basic/_grid.scss',
 		'~/assets/styles/basic/_typography.scss',
@@ -70,11 +71,11 @@ export default defineNuxtConfig({
 					rel: 'stylesheet',
 					href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',
 				},
-				// {
-				// 	rel: 'stylesheet',
-				// 	type: 'text/css',
-				// 	href: 'https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css',
-				// },
+				{
+					rel: 'stylesheet',
+					type: 'text/css',
+					href: '//assets/styles/basic/_reset.css',
+				},
 				// {
 				// 	rel: 'icon',
 				// 	type: 'image/x-icon',

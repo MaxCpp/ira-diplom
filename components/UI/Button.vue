@@ -106,9 +106,9 @@ export default {
     align-items: center;
 	padding: 0 10px;
     height: 38px;
-	border: 1px solid $black;
+	border: 1px solid var(--black-color);
 	border-radius: 5px;
-	background-color: $black;
+	background-color: var(--black-color);
 	font-family: "Teko", sans-serif;
 	font-weight: 500;
 	font-size: 15px;
@@ -148,8 +148,8 @@ export default {
 			&:hover,
 			&:focus {
 				color: $white;
-				background-color: $black;
-				border-color: $black;
+				background-color: var(--black-color);
+				border-color: var(--black-color);
 			}
 
             &:before {
@@ -165,7 +165,7 @@ export default {
             //&:disabled {
             //    background-color: $primary4;
             //    border-color: $primary4;
-            //    color: $neutrals2;
+            //    color: var(--neutrals2);
             //}
         }
 
@@ -195,7 +195,7 @@ export default {
         //    }
         //
 		//	&:hover:before {
-		//		background: $black !important;
+		//		background: var(--black-color) !important;
 		//	}
         //}
     }

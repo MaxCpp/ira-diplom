@@ -6,7 +6,7 @@
     <div class="test-knowledge">
         <h3 class="title_size_16 font-500 mb-5">Проверь свои знания</h3>
         <p class="title_size_12 text-gray">Подготовься к зачёту<br> в интерактивной форме</p>
-        <Button to="/learning" width="100%" size="s" style="margin-top: auto">Изучать Артефакты</Button>
+        <Button to="/" width="100%" size="s" style="margin-top: auto">Изучать Артефакты</Button>
     </div>
 </template>
 
@@ -18,7 +18,7 @@
     height: 215px;
     padding: 15px 10px;
     margin-top: auto;
-    background-color: $neutrals2;
+    background-color: var(--neutrals2);
     background-image: url('/images/brash@2x.jpg');
     background-position: 100% 22px;
     background-size: 173px;

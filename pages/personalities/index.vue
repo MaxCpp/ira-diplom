@@ -103,7 +103,7 @@ export default defineNuxtComponent({
 .card-person {
     padding: 20px;
     border-radius: 10px;
-    background-color: $neutrals1;
+    background-color: var(--neutrals1);
     
     &__avatar {
         width: 75px;
@@ -117,12 +117,12 @@ export default defineNuxtComponent({
     }
 
     &__dates {
-        color: $neutrals4;
+        color: var(--neutrals4);
     }
 
     &__description {
         margin-bottom: 25px;
-        color: $neutrals4;
+        color: var(--neutrals4);
     }
 
     &__tags {
@@ -132,7 +132,7 @@ export default defineNuxtComponent({
     }
 
     &__tag {
-        background-color: $neutrals3;
+        background-color: var(--neutrals3);
     }
 }
 </style>

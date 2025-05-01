@@ -83,7 +83,7 @@ export default defineNuxtComponent({
 
     &__description {
         margin-top: 5px;
-        color: $neutrals4;
+        color: var(--neutrals4);
         font-size: 12px;
     }
 }

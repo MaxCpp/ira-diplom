@@ -57,7 +57,7 @@
     height: 100%;
     padding: 20px 15px;
     border-radius: 7px;
-    background-color: $neutrals1;
+    background-color: var(--neutrals1);
     
     &__link {
         display: flex;
@@ -67,7 +67,7 @@
         border-radius: 4px;
         font-size: 16px;
         text-decoration: none;
-        color: $neutrals4;
+        color: var(--neutrals4);
         
         &.router-link-active,
         &:hover {
