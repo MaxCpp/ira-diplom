@@ -14,8 +14,8 @@ export default defineNuxtConfig({
 		// 	routes: ['/'],       // явно
 		// 	crawlLinks: false,   // отключаем автоматический обход
 		// },
-		// preset: 'static'
-		preset: 'github-pages',
+		preset: 'static',
+		// preset: 'github-pages',
 		routeRules: {
 			'/**': { static: true }
 		}
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
 	vite: {
 		build: {
 			cssCodeSplit: true, // Разделение CSS на отдельные файлы
-			assetsInlineLimit: 0, // Не встраивать стили и ресурсы в HTML
+			assetsInlineLimit: 1, // Не встраивать стили и ресурсы в HTML
 		},
 	// 	css: {
 	// 		preprocessorOptions: {
@@ -46,17 +46,17 @@ export default defineNuxtConfig({
 	// 		},
 	// 	},
 	},
-	css: [
-		'~/assets/styles/main.scss',
+	// css: [
+		// '~/assets/styles/main.scss',
 		// '~/assets/styles/basic/variables.scss',
 		// '~/assets/styles/basic/grid.scss',
 		// '~/assets/styles/basic/typography.scss',
 		// '~/assets/styles/basic/mixins.scss',
 		// '~/assets/styles/common.scss',
-	],
+	// ],
 	app: {
-		buildAssetsDir: '_nuxt',
-		baseURL: isDev ? '/' : '/maxcpp.github.io/', // только если проект лежит не в корне
+		// buildAssetsDir: '/_nuxt/',
+		// baseURL: isDev ? '/' : '/maxcpp.github.io/', // только если проект лежит не в корне
 		head: {
 			title: 'Diplom',
 			meta: [
@@ -78,16 +78,6 @@ export default defineNuxtConfig({
 				{
 					rel: 'stylesheet',
 					href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',
-				},
-				{
-					rel: 'stylesheet',
-					type: 'text/css',
-					href: '/_nuxt/assets/styles/basic/variables.css',
-				},
-				{
-					rel: 'stylesheet',
-					type: 'text/css',
-					href: '/_nuxt/assets/styles/basic/reset.css',
 				},
 				// {
 				// 	rel: 'icon',
