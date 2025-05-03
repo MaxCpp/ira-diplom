@@ -29,94 +29,16 @@ export default defineNuxtComponent({
         // const store = useStore();
         let galleries = [];
         
-        // try {
-        //     const response = await $fetch('/data/gallery.json');
-        //
-        //     if (response) {
-        //         galleries = response;
-        //     }
-        // } catch (e) {
-        //     console.log(e)
-        // }
+        try {
+            const response = await $fetch('/data/gallery.json');
 
-        galleries = [
-            {
-                "view": "3",
-                "pictures": [
-                    {
-                        "img": "/images/gallery/868f9ed09b7e561652e65f145fd045b9d9fb6a21.png",
-                        "name": "Женщина в шляпе",
-                        "author": "Анри́ Мати́сс",
-                        "style": "Фовизм"
-                    },
-                    {
-                        "img": "/images/gallery/868f9ed09b7e561652e65f145fd045b9d9fb6a21.png",
-                        "name": "Мадам Матисс",
-                        "author": "Анри́ Мати́сс",
-                        "style": "Фовизм"
-                    },
-                    {
-                        "img": "/images/art-movements/fovism.png",
-                        "name": "Мадам Матисс",
-                        "author": "Анри́ Мати́сс",
-                        "style": "Фовизм",
-                        "view": "fields"
-                    }
-                ]
-            },
-            {
-                "view": "2",
-                "pictures": [
-                    {
-                        "img": "/images/art-movements/fovism.png",
-                        "name": "Мадам Матисс",
-                        "author": "Анри́ Мати́сс",
-                        "style": "Фовизм"
-                    },
-                    {
-                        "img": "/images/art-movements/fovism.png",
-                        "name": "Мадам Матисс",
-                        "author": "Анри́ Мати́сс",
-                        "style": "Фовизм"
-                    }
-                ]
-            },
-            {
-                "view": "2bs",
-                "pictures": [
-                    {
-                        "img": "/images/art-movements/fovism.png",
-                        "name": "Мадам Матисс",
-                        "author": "Анри́ Мати́сс",
-                        "style": "Фовизм",
-                        "view": "fields"
-                    },
-                    {
-                        "img": "/images/art-movements/fovism.png",
-                        "name": "Мадам Матисс",
-                        "author": "Анри́ Мати́сс",
-                        "style": "Фовизм"
-                    }
-                ]
-            },
-            {
-                "view": "2sb",
-                "pictures": [
-                    {
-                        "img": "/images/art-movements/fovism.png",
-                        "name": "Мадам Матисс",
-                        "author": "Анри́ Мати́сс",
-                        "style": "Фовизм"
-                    },
-                    {
-                        "img": "/images/art-movements/fovism.png",
-                        "name": "Мадам Матисс",
-                        "author": "Анри́ Мати́сс",
-                        "style": "Фовизм"
-                    }
-                ]
+            if (response) {
+                galleries = response;
             }
-        ]
+        } catch (e) {
+            console.log(e)
+        }
+        
         // useSeoMeta({
         // 	title: t('pages.games.title'),
         // 	ogTitle: t('pages.games.title'),
