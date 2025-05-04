@@ -127,6 +127,8 @@
 </template>
 
 <script>
+import IconClose from "~/components/icons/IconClose.vue";
+import IconHamburger from "~/components/icons/IconHamburger.vue";
 import {useStore} from '~/stores/store';
 
 export default {

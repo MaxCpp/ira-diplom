@@ -19,10 +19,14 @@
 </template>
 
 <script>
-import {useStore} from "~/stores/store.js";
+import Input from "~/components/UI/Input.vue";
+// import {useStore} from "~/stores/store.js";
 
 export default defineNuxtComponent({
     name: 'PageGlossary',
+    components: {
+        Input
+    },
     async setup() {
         // const store = process.client ? useStore() : null;
         // const store = useStore();

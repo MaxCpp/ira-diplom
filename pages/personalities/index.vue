@@ -1,10 +1,16 @@
 <template>
 	<div>
         <h1 class="title_size_40 mb-15">Персоналии</h1>
-        <p class="text-gray">{{persons.length}} авторов</p>
+        <p class="text-gray mb-30">{{artists.length}} авторов</p>
         
-        <div v-if="persons.length" class="list-persons mt-40">
-            <div v-for="card in persons" class="card-person">
+        <Input v-model="search" placeholder="Поиск...">
+            <template #prepend>
+                <IconSearch/>
+            </template>
+        </Input>
+
+        <div v-if="filteredArtists.length" class="list-artists mt-40">
+            <div v-for="card in filteredArtists" class="card-person">
                 <div style="display: flex; gap:10px; align-items: center">
                     <img :src="card.avatar" class="card-person__avatar"/>
                     <div>
@@ -32,20 +38,24 @@
 </template>
 
 <script>
-import {useStore} from "~/stores/store.js";
+import Button from "~/components/UI/Button.vue";
+// import {useStore} from "~/stores/store.js";
 
 export default defineNuxtComponent({
 	name: 'PageArtMovements',
+    components: {
+        Button
+    },
 	async setup() {
         // const store = process.client ? useStore() : null;
 		// const store = useStore();
-		let persons = [];
+		let artists = [];
 
 		try {
             const response = await $fetch('/data/artists.json');
 
 			if (response) {
-                persons = response;
+                artists = response;
 			}
 		} catch (e) {
             console.log(e)
@@ -62,14 +72,26 @@ export default defineNuxtComponent({
 
 		return {
 			// store,
-            persons
+            artists
 		}
 	},
+    data() {
+        return {
+            search: ''
+        }
+    },
+    computed: {
+        filteredArtists() {
+            const search = this.search.toLowerCase()
+            
+            return this.artists.filter(item => item.name.toLowerCase().includes(search))
+        }
+    }
 })
 </script>
 
 <style scoped lang="scss">
-.list-persons {
+.list-artists {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -131,6 +153,8 @@ export default defineNuxtComponent({
     }
 
     &__tag {
+        padding: 5px;
+        border-radius: 4px;
         background-color: var(--neutrals3);
     }
 }

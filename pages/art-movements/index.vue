@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import {useStore} from "~/stores/store.js";
+// import {useStore} from "~/stores/store.js";
 
 export default defineNuxtComponent({
 	name: 'PageArtMovements',
@@ -66,6 +66,7 @@ export default defineNuxtComponent({
 
 .card-movements {
     width: 256px;
+    cursor: pointer;
     
     &__image {
         width: 100%;

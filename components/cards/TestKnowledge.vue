@@ -1,7 +1,5 @@
-<script>
-export default defineNuxtComponent({
-    name: 'TestKnowledge',
-})
+<script setup>
+import Button from "~/components/UI/Button.vue";
 </script>
 
 <template>
