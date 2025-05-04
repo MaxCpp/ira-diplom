@@ -22,7 +22,7 @@
     </button>
 </template>
 <script>
-export default {
+export default defineNuxtComponent({
     name: 'Button',
     props: {
         loading: {
@@ -95,7 +95,7 @@ export default {
             return this.loading;
         },
     },
-};
+});
 </script>
 <style lang="scss" scoped>
 .button {

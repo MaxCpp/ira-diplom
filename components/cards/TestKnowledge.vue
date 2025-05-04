@@ -1,5 +1,7 @@
-<script setup lang="ts">
-
+<script>
+export default defineNuxtComponent({
+    name: 'TestKnowledge',
+})
 </script>
 
 <template>

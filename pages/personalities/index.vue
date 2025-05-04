@@ -23,7 +23,7 @@
                 <div v-if="card.pictures.length" class="list-pictures">
                     <div v-for="picture in card.pictures" class="picture">
                         <img :src="picture.img" class="picture__img"/>
-                        <div class="picture__name">{{picture.name}}</div>
+                        <div class="picture__name">«{{picture.name}}»</div>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@ export default defineNuxtComponent({
 		let persons = [];
 
 		try {
-            const response = await $fetch('/data/persons.json');
+            const response = await $fetch('/data/artists.json');
 
 			if (response) {
                 persons = response;
