@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import TestKnowledge from "~/components/cards/TestKnowledge.vue";
 </script>
 
 <template>
