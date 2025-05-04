@@ -4,7 +4,7 @@
         <p class="text-gray">Текст который я могу менять</p>
         
         <div v-if="movements.length" class="list-movements mt-40">
-            <div v-for="card in movements" class="card-movements">
+            <div v-for="card in movements" class="card-movements" @click="$router.push(`/art-movements/${card.slug}`)">
                 <img :src="card.img" class="card-movements__image"/>
                 <h3 class="card-movements__title">{{card.title}}</h3>
                 <p class="card-movements__description">{{card.description}}</p>
